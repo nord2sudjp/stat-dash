@@ -1,9 +1,9 @@
 <template>
   <div class="json-loader container">
     <h2>Json Loader {{ this.targetData }}</h2>
-    <ul class="musics list-group">
-      <li v-for="music in dataRecords" class="list-group-item">
-        <div>{{music.album}}</div>
+    <ul class="recs list-group">
+      <li v-for="rec in dataRecords" class="list-group-item">
+        <div>{{rec.album}}</div>
       </li>
     </ul>
   </div>
@@ -21,17 +21,6 @@ export default {
   },
 
   created() {
-    //this.targetData = require("@/assets/music.json");
-
-    // axios
-    // .get("/assets/music.json")
-    // .then(response => {
-    //   this.musics = response.data;
-    // })
-    // .catch(error => {
-    //   console.log(error);
-    // });
-
     this.targetData = this.$route.params.targetData;
     console.log("this", this.$route.params.targetData);
 

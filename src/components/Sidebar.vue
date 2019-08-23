@@ -2,55 +2,46 @@
   <!-- Sidebar -->
   <nav id="sidebar">
     <div class="sidebar-header">
-      <h3>Bootstrap Sidebar</h3>
+      <h3>統計データ選択</h3>
     </div>
 
     <ul class="list-unstyled components">
-      <p>Dummy Heading</p>
       <li class="active">
         <a
-          href="#homeSubmenu"
+          href="#pageJinkou"
           data-toggle="collapse"
           aria-expanded="false"
           class="dropdown-toggle"
-        >Home</a>
-        <ul class="collapse list-unstyled" id="homeSubmenu">
+        >人口・世帯</a>
+        <ul class="collapse list-unstyled" id="pageJinkou">
           <li>
-            <a href="#">Home 1</a>
+            <router-link :to="{name: 'Content', params:{ statType: '人口'}}">人口総数</router-link>
           </li>
           <li>
-            <a href="#">Home 2</a>
+            <router-link :to="{name: 'Content', params:{ statType: '人口_男'}}">男</router-link>
           </li>
           <li>
-            <a href="#">Home 3</a>
+            <router-link :to="{name: 'Content', params:{ statType: '人口_女'}}">女</router-link>
           </li>
         </ul>
-      </li>
-      <li>
-        <a href="#">About</a>
       </li>
       <li>
         <a
-          href="#pageSubmenu"
+          href="#pageShizen"
           data-toggle="collapse"
           aria-expanded="false"
           class="dropdown-toggle"
-        >Pages</a>
-        <ul class="collapse list-unstyled" id="pageSubmenu">
+        >自然環境</a>
+        <ul class="collapse list-unstyled" id="pageShizen">
           <li>
-            <a href="#">Page 1</a>
+            <router-link :to="{name: 'Content', params:{ statType: '面積'}}">面積</router-link>
           </li>
           <li>
-            <a href="#">Page 2</a>
-          </li>
-          <li>
-            <a href="#">Page 3</a>
+            <router-link :to="{name: 'Content', params:{ statType: '可住面積'}}">可住面積</router-link>
           </li>
         </ul>
       </li>
-      <li>
-        <a href="#">Portfolio</a>
-      </li>
+
       <li>
         <a href="#">Contact</a>
       </li>
@@ -128,18 +119,6 @@ export default {
 a[aria-expanded="true"] {
   color: #fff;
   background: #6d7fcc;
-}
-
-a[data-toggle="collapse"] {
-  position: relative;
-}
-
-.dropdown-toggle::after {
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
 }
 
 ul ul a {

@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
-    <a class="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
+    <a class="navbar-brand mr-1" href="index.html">Tokyo Toukei Box</a>
     <!-- Navbar Search -->
     <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
       <div class="input-group">
@@ -19,8 +19,8 @@
 
     <!-- Navbar -->
     <ul class="navbar-nav ml-auto ml-md-0">
-      <li class="nav-item dropdown no-arrow mx-1">
-        <a class="nav-link">Notify</a>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.e-stat.go.jp">estat</a>
       </li>
       <li class="nav-item dropdown no-arrow mx-1">
         <a class="nav-link">Alert</a>
